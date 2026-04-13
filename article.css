@@ -21,7 +21,7 @@ html, body {
     line-height: 1.8;
     background:
         linear-gradient(rgba(6, 22, 16, 0.88), rgba(6, 22, 16, 0.88)),
-        url('../assets/Images/i.png') center / cover no-repeat fixed;
+        url('./i.png') center / cover no-repeat fixed;
 }
 
 /* ---- Overlay flou global ---- */
