@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La pensée à long terme – Cultivora Land</title>
+    <link rel="stylesheet" href="article.css" />
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/Images/logo.png" alt="Logo Cultivora Land" class="logo-img" />
+            <span class="logo-name">Cultivora Land</span>
+            <span class="logo-tagline">| le jardin du savoir</span>
+        </div>
+
+        <!-- Navigation desktop -->
+        <nav class="nav-desktop">
+            <a href="#" class="nav-link">Accueil</a>
+            <a href="#" class="nav-link">Notions</a>
+            <a href="#" class="nav-link">Catégories</a>
+            <a href="#" class="nav-link">À propos</a>
+            <a href="#" class="nav-cta">Explorer</a>
+        </nav>
+
+        <!-- Hamburger mobile -->
+        <button class="menu-icon" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Menu mobile déroulant -->
+    <nav class="nav-mobile" id="navMobile">
+        <a href="#" class="nav-mobile-link">Accueil</a>
+        <a href="#" class="nav-mobile-link">Notions</a>
+        <a href="#" class="nav-mobile-link">Catégories</a>
+        <a href="#" class="nav-mobile-link">À propos</a>
+        <a href="#" class="nav-mobile-link nav-mobile-cta">Explorer</a>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container">
+
+        <!-- Fil d'Ariane -->
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="#">Accueil</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="#">Croissance personnelle</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Pensée à long terme</span>
+        </nav>
+
+        <!-- Titre -->
+        <h1 class="notion-title">
+            La pensée à long terme : apprendre à construire aujourd'hui ce que le futur révélera demain
+        </h1>
+
+        <!-- Carte de lecture scrollable -->
+        <section class="reading-card" tabindex="0" aria-label="Contenu de l'article">
+
+            <p>
+                Un vieil homme marchait chaque matin jusqu'au bord d'un terrain vide à la sortie du village.
+            </p>
+
+            <p>
+                Chaque jour, il plantait un arbre, arrosait ceux de la veille, puis repartait en silence.
+            </p>
+
+            <p>
+                Les villageois le regardaient avec perplexité.
+                « Ces arbres mettront vingt ans à pousser. Tu ne pourras même pas t’asseoir à leur ombre. »
+            </p>
+
+            <p>
+                Il souriait simplement :
+                « Ce n’est pas pour moi que je les plante. »
+            </p>
+
+            <br>
+
+            <p>
+                Sur le moment, le geste semblait insignifiant.  
+                Un homme seul. Quelques jeunes arbres dans une terre rouge et sèche. Rien de spectaculaire.
+            </p>
+
+            <p>
+                Pourtant, vingt ans plus tard, cet endroit était devenu un refuge de fraîcheur.
+            </p>
+
+            <p>
+                Les enfants y jouaient.  
+                Les vieillards s’y retrouvaient.  
+                La vie s’était organisée autour de ce qu’un homme avait commencé sans en voir la fin.
+            </p>
+
+            <br>
+
+            <p>
+                Cette histoire illustre une capacité essentielle : <strong>la pensée à long terme</strong>.
+            </p>
+
+            <p>
+                Non pas comme une vertu abstraite, mais comme une manière d’habiter le temps.
+            </p>
+
+            <p>
+                Comprendre que chaque geste d’aujourd’hui est une graine dont on ne verra pas toujours l’éclosion.
+            </p>
+
+            <br>
+
+            <p>
+                Les plus grandes constructions humaines ne sont pas celles qui apparaissent vite,
+                mais celles que quelqu’un a eu la patience de commencer.
+            </p>
+
+            <p>
+                Les cathédrales ont été bâties sur plusieurs générations.  
+                Les grandes bibliothèques, grain par grain.  
+                Les forêts anciennes, à partir d’une seule graine.
+            </p>
+
+            <br>
+
+            <p>
+                Penser à long terme demande un renoncement.
+            </p>
+
+            <p>
+                Renoncer à l’immédiateté.  
+                À la reconnaissance instantanée.  
+                Au besoin de voir tout de suite les résultats.
+            </p>
+
+            <p>
+                Cela demande une foi tranquille dans le processus.
+            </p>
+
+            <br>
+
+            <p>
+                Dans un monde où tout réclame une réponse immédiate,
+                cultiver cette façon de penser devient presque un acte de résistance.
+            </p>
+
+            <p>
+                C’est choisir d’habiter le temps long.
+            </p>
+
+        </section>
+
+        <!-- Notions associées 
+        <section class="related-notions">
+            <h2 class="related-title">Notions associées</h2>
+            <div class="notion-tags">
+                <a href="#" class="tag">Discipline silencieuse</a>
+                <a href="#" class="tag">Patience productive</a>
+                <a href="#" class="tag">Construction invisible</a>
+                <a href="#" class="tag">Résilience</a>
+                <a href="#" class="tag">Vision stratégique</a>
+            </div>
+        </section>-->
+
+    </main>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('navMobile');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                toggle.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
